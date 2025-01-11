@@ -1,0 +1,25 @@
+.dashboard {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  canvas {
+    max-width: 500px;
+    max-height: 400px;
+    margin-left: 0px;
+    display: block;
+    border: 1px solid blue;
+  }
+  
+  #expenseList {
+    display: block;
+    width: 50%;
+    border: 1px solid red;
+    margin-right: 20px; /* add some margin to separate the two elements */
+  }
+
+  #updateChartButton{
+    display: block;
+    margin-bottom: 0px;
+    margin-right: 0px;
+  }

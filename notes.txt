@@ -1,0 +1,12 @@
+variables
+- budget (User Input)
+- budget division
+- budget division percentage
+- budget breakdown
+
+algorithm
+- user enter a budget
+- user enter the budget division
+- user enter the budget division percentage
+- system computes the budget between the budget division percentage
+- the system display the output
