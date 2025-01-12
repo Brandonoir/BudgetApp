@@ -14,20 +14,32 @@ const data = {
     labels: labels,
     datasets: [{
         label: "My Budget",
-        data: dataSet, // Values for each segment
+        data: dataSet, 
         backgroundColor: [
-            'rgba(255, 99, 132, 0.8)', // Red
-            'rgba(54, 162, 235, 0.8)', // Blue
-            'rgba(255, 206, 86, 0.8)', // Yellow
-            'rgba(75, 192, 192, 0.8)', // Green
-            'rgba(153, 102, 255, 0.8)' // Purple
+            '#003f5c', 
+            '#2f4b7c', 
+            '#665191', 
+            '#a05195', 
+            '#d45087',
+            '#f95d6a',
+            '#ff7c43',
+            '#ffa600',
+            '#ffa07a',
+            '#6b8e23',
+            '#4682b4'
         ],
         borderColor: [
-            'rgba(255, 99, 132, 1)',
-            'rgba(54, 162, 235, 1)',
-            'rgba(255, 206, 86, 1)',
-            'rgba(75, 192, 192, 1)',
-            'rgba(153, 102, 255, 1)'
+            '#003f5c', 
+            '#2f4b7c', 
+            '#665191', 
+            '#a05195', 
+            '#d45087',
+            '#f95d6a',
+            '#ff7c43',
+            '#ffa600',
+            '#ffa07a',
+            '#6b8e23',
+            '#4682b4'
         ],
         borderWidth: 1
     }]
@@ -38,14 +50,18 @@ const myPieChart = new Chart(ctx, {
     type: 'pie', // Specify the chart type
     data: data,  // Pass the data
     options: {
-        responsive: true, // Make the chart responsive
+        responsive: true,
         plugins: {
             legend: {
                 position: 'right', // Position of the legend
             },
             title: {
                 display: true,
-                text: 'Pie Chart Example' // Chart title
+                text: 'Budget Chart',
+                font: {
+                    size: 20,
+                    family: 'Gill Sans'
+                }
             }
         }
     }
