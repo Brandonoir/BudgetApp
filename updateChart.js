@@ -4,7 +4,7 @@ updateButton.addEventListener("click", function () {
     const eNames = document.querySelectorAll(".eName");
     const eAmount = document.querySelectorAll(".eAmount");
 
-    // Get the values from the input fields
+    // get the values from the input fields
     const labels = Array.from(eNames).map((input) => input.value);
     const dataSet = Array.from(eAmount).map(
     (input) => parseFloat(input.value) || 0

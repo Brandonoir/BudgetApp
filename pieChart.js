@@ -9,7 +9,7 @@ const labels = Array.from(eNames).map(input => input.value);
 const dataSet = Array.from(eAmount).map(input => parseFloat(input.value) || 0);
 
 
-// Define the data for the pie chart
+// data for the pie chart
 const data = {
     labels: labels,
     datasets: [{
@@ -47,7 +47,7 @@ const data = {
 
 // Create the pie chart
 const myPieChart = new Chart(ctx, {
-    type: 'pie', // Specify the chart type
+    type: 'pie',
     data: data,  // Pass the data
     options: {
         responsive: true,
